@@ -7,11 +7,17 @@ the Collatz conjecture:
 Repeat the following until 1 is obtained: For even numbers, divide by 2; for 
 odd numbers, multiply by 3 and add 1.
 
-### Usage:
+### Usage 1:
+
+```bash
+python collatz_conjecture.py 7
+```
+
+### Usage 2:
 
 ```python
 import collatz_conjecture
-n: int = 10
+n: int = 7
 generated: list[int] = collatz_conjecture.generate(n)
 ```
 """
