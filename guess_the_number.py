@@ -22,7 +22,7 @@ import sys
 import getch
 
 
-def _get_number(prompt: str = "") -> int:
+def get_number(prompt: str = "") -> int:
     print(prompt, end="", flush=True)
     num = []
     while True:
@@ -48,7 +48,7 @@ def main(min_value: int = 1, max_value: int = 100) -> None:
     answer = random.randint(min_value, max_value)
     attempts = 1
     bound_len = max(len(str(min_value)), len(str(max_value)))
-    while (guess := _get_number(f"{min_value:{bound_len}d} <= x <= {max_value:{bound_len}d}: ")) != answer:
+    while (guess := get_number(f"{min_value:{bound_len}d} <= x <= {max_value:{bound_len}d}: ")) != answer:
         if not min_value <= guess <= max_value:
             continue
         attempts += 1
