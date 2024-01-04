@@ -5,7 +5,7 @@
 ### Requirements:
 
 ```text
-simple_term_menu
+simple-term-menu
 ```
 
 ### Usage:
